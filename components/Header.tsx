@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 'use client'
 
 import React from 'react'
@@ -6,135 +5,39 @@ import { SocialIcon } from 'react-social-icons'
 import { motion } from 'framer-motion'
 
 function Header() {
-
   return (
-    <header className='sticky top-0  p-5 flex items-start justify-between
-     max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='sticky top-0 p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+      {/* Left social icons */}
       <motion.div
-      initial={{
-        x: -500,
-        opacity: 0,
-        scale: 0.5,
-      }}
-      animate={{
-        x: 0,
-        opacity: 1,
-        scale: 1,
-      }}
-      transition={{
-        duration: 1.5,
-      }}
-      className='flex flex-row items-center'
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className='flex flex-row items-center'
       >
-        <SocialIcon
-          url='https://www.instagram.com/_ahmad__.__'
-          fgColor='gray'
-          bgColor='transparent'
-        />
-        <SocialIcon
-          url='https://www.github.com/ahmadkhan46'
-          fgColor='gray'
-          bgColor='transparent'
-        />
+        <SocialIcon url='https://www.instagram.com/_ahmad__.__' fgColor='gray' bgColor='transparent' />
+        <SocialIcon url='https://www.github.com/ahmadkhan46' fgColor='gray' bgColor='transparent' />
       </motion.div>
 
+      {/* Right email icon */}
       <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{duration: 1.5}}
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
         className='flex flex-row items-center text-gray-300 cursor-pointer'
       >
-          <SocialIcon
-            url='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgsQhVlTvWkzKrtpgWBNCctMFTBvrRkPcMRcGmrfMGXNqwXZBLcwRlGgjXbrcwxxPsQjz'
-            className='cursor-pointer'
-            network='email'
-            fgColor='gray'
-            bgColor='transparent'
-          />
-          <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-            Get In Touch
-          </p>
-        </motion.div>
+        <SocialIcon
+          url='mailto:ahmadsaidkhan46@gmail.com'
+          className='cursor-pointer'
+          network='email'
+          fgColor='gray'
+          bgColor='transparent'
+        />
+        <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
+          Get In Touch
+        </p>
+      </motion.div>
     </header>
   )
 }
 
-=======
-'use client'
-
-import React from 'react'
-import { SocialIcon } from 'react-social-icons'
-import { motion } from 'framer-motion'
-
-function Header() {
-
-  return (
-    <header className='sticky top-0  p-5 flex items-start justify-between
-     max-w-7xl mx-auto z-20 xl:items-center'>
-      <motion.div
-      initial={{
-        x: -500,
-        opacity: 0,
-        scale: 0.5,
-      }}
-      animate={{
-        x: 0,
-        opacity: 1,
-        scale: 1,
-      }}
-      transition={{
-        duration: 1.5,
-      }}
-      className='flex flex-row items-center'
-      >
-        <SocialIcon
-          url='https://www.instagram.com/_ahmad__.__'
-          fgColor='gray'
-          bgColor='transparent'
-        />
-        <SocialIcon
-          url='https://www.github.com/ahmadkhan46'
-          fgColor='gray'
-          bgColor='transparent'
-        />
-      </motion.div>
-
-      <motion.div
-        initial={{
-          x: 500,
-          opacity: 0,
-          scale: 0.5,
-        }}
-        animate={{
-          x: 0,
-          opacity: 1,
-          scale: 1,
-        }}
-        transition={{duration: 1.5}}
-        className='flex flex-row items-center text-gray-300 cursor-pointer'
-      >
-          <SocialIcon
-            url='https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMTgsQhVlTvWkzKrtpgWBNCctMFTBvrRkPcMRcGmrfMGXNqwXZBLcwRlGgjXbrcwxxPsQjz'
-            className='cursor-pointer'
-            network='email'
-            fgColor='gray'
-            bgColor='transparent'
-          />
-          <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>
-            Get In Touch
-          </p>
-        </motion.div>
-    </header>
-  )
-}
-
->>>>>>> 03a6df1 (Update project for redeploy)
 export default Header
