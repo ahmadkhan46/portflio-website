@@ -99,7 +99,6 @@ export function Projects() {
                 </span>{' '}
                 {project.title}
               </h4>
-              <p className='text-xs sm:text-sm text-[#F7AB0A] text-center'>{project.period}</p>
               <p className='text-xs sm:text-sm text-gray-300 text-center'>
                 <span className='font-semibold'>Tech:</span> {project.stack}
               </p>
