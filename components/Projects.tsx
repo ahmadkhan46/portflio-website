@@ -6,7 +6,6 @@ import { motion } from 'framer-motion'
 type Project = {
   id: number
   title: string
-  period: string
   img: string
   stack: string
   overview: string
@@ -18,7 +17,6 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Next-Hire — AI Recruitment Intelligence Platform',
-    period: 'March 2026 · University Capstone',
     img: '/next-hire.png',
     stack: 'Next.js 16, TypeScript, PostgreSQL (Neon), Prisma, Clerk, OpenAI GPT-4o, BullMQ, Redis',
     overview:
@@ -33,7 +31,6 @@ const projects: Project[] = [
   {
     id: 2,
     title: 'FlowBoard - Task Management Application',
-    period: 'Latest Release',
     img: '/flowboard.png',
     stack: 'React.js, Next.js, TypeScript, Vercel',
     overview:
@@ -47,7 +44,6 @@ const projects: Project[] = [
   {
     id: 3,
     title: 'Netflix Clone',
-    period: 'Production Deployment',
     img: '/netflix-clone.png',
     stack: 'React.js, Firebase, JavaScript, CSS',
     overview:
